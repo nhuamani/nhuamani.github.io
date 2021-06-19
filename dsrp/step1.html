@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Step 1 | Data Science</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@edteamlat">
+    <meta property="og:title" content="Step 1">
+    <meta property="og:description" content="Pagina de paso 1">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
+  </head>
+  <body>
+    <!-- include ../includes/main-menu-->
+    <div class="progress-container">
+      <div class="progress">
+        <div class="progress-dot is-active">
+          <div class="progress-dot__circle"></div>
+          <div class="progress-dot__name">Nombre y Correo</div>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot__circle"></div>
+          <div class="progress-dot__name">Intereses</div>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot__circle"></div>
+          <div class="progress-dot__name">Compromiso</div>
+        </div>
+        <div class="progress-dot">
+          <div class="progress-dot__circle"></div>
+          <div class="progress-dot__name">Entrar</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="step-icon"><span><i class="far fa-user"></i></span>
+        <div class="step-head">
+          <h1 class="step-head__title">Estás a unos pasos de adquirir conocimiento para toda la vida</h1>
+          <p class="step-head__subtitle">Completa tus datos para crear <span>tu </span>cuenta.</p>
+        </div>
+      </div>
+      <form class="step-input" action="">
+        <div class="form-control">
+          <label class="step-input__title" for="name">Nombre Completo</label>
+          <p class="step-input__info">Así aparecerá en tus certificados</p>
+          <div class="step-input__inputs">
+            <input type="text" id="name" placeholder="Nombres(s)" required>
+            <input type="text" id="last-name" placeholder="Apellido(s)" required>
+          </div>
+        </div>
+        <div class="form-control">
+          <label class="step-input__title" for="email">Correo electrónico</label>
+          <div class="step-input__info">Te enviaremos un email de confirmación para activar tu cuenta si no lo has hecho antes.
+            <input type="mail" id="email" placeholder="tunombre@correo.com" required>
+          </div>
+        </div>
+        <div class="form-control">
+          <p class="step-input__title">¿Tienes WhatsApp?</p>
+          <div class="radio">
+            <div class="step-input__radio">
+              <input id="si" type="radio" name="whatsapp" value="si"><span>Si</span>
+            </div>
+            <div class="step-input__radio">
+              <input id="no" type="radio" name="whatsapp" value="no" checked><span>No</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form-control show">
+      <div class="container">
+        <p class="step-input__title">Ingresa un número de celular válido para contacto</p>
+        <input type="tel" name="cel" placeholder="N°. Cel">
+      </div>
+    </div>
+    <div class="container">
+      <div class="step-footer">
+        <div class="step-footer__question">
+          <p>¿Ya tienes una cuenta Platzi?</p><a href="#">Entrar aquí</a>
+        </div><a class="step-footer__btn" href="step2.html">Continuar</a>
+      </div>
+    </div>
+    <script src="assets/js/scripts-min.js"></script>
+  </body>
+</html>
