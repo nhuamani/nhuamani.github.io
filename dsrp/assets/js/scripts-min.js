@@ -7,10 +7,22 @@ var _activeMenu = require('./modules/active-menu');
 
 // saludo()
 // despedida()
-(0, _activeMenu.activeMenu)();
+// activeMenu()
 
-var checket = document.querySelectorAll('input[name="whatsapp"]');
-console.log(checket, "este es:");
+var contact = document.getElementById('contact');
+
+document.addEventListener('click', function () {
+  var checket = document.querySelectorAll('input[type="radio"]');
+  console.log(checket);
+
+  for (var i = 0; i < checket.length; i++) {
+    if (checket[i].checked && checket[i].value == 'si') {
+      contact.style.display = "block";
+    } else if (checket[i].checked && checket[i].value == 'no') {
+      contact.style.display = "none";
+    }
+  }
+});
 
 },{"./modules/active-menu":2,"./modules/example":3}],2:[function(require,module,exports){
 'use strict';
